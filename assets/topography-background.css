@@ -1,0 +1,46 @@
+/*
+ * Custom topography background for Shopify Dawn
+ * Add this file to: assets/topography-background.css
+ *
+ * Also add the supplied image to:
+ * assets/topography-background.png
+ */
+
+html,
+body {
+  background-color: #000;
+}
+
+body {
+  background-image: url("./topography-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Dawn normally paints its own backgrounds over the body.
+   These rules allow the wallpaper to remain visible. */
+body.gradient,
+.gradient,
+#MainContent,
+main,
+.shopify-section {
+  background-color: transparent;
+}
+
+/* Prevent common Dawn section wrappers from hiding the wallpaper
+   unless a section explicitly needs its own background. */
+main .color-background-1,
+main .color-background-2 {
+  background: transparent;
+}
+
+/* Mobile browsers can behave poorly with fixed backgrounds. */
+@media screen and (max-width: 749px) {
+  body {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+  }
+}
