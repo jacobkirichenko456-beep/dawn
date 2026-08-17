@@ -1,0 +1,93 @@
+/*
+ * Dawn theme — full storefront topography background
+ *
+ * Put this file in:
+ *   assets/topography-background.css
+ *
+ * Put your pattern image in:
+ *   assets/topography-background.png
+ *
+ * Load this CSS after Dawn's main styles in layout/theme.liquid:
+ *   {{ 'topography-background.css' | asset_url | stylesheet_tag }}
+ */
+
+/* The actual page wallpaper */
+html,
+body {
+  min-height: 100%;
+  background-color: #000 !important;
+}
+
+body {
+  background-image: url("./topography-background.png") !important;
+  background-repeat: repeat !important;
+  background-position: top center !important;
+  background-size: 600px auto !important;
+  background-attachment: fixed !important;
+}
+
+/*
+ * Dawn puts white backgrounds on sections and color-scheme wrappers.
+ * Make those layers transparent so the body wallpaper can show through.
+ */
+#MainContent,
+#MainContent > *,
+#MainContent .shopify-section,
+#MainContent .section,
+#MainContent .gradient,
+#MainContent [class*="color-background"],
+#MainContent [class*="color-scheme"],
+.template-index #MainContent,
+.template-collection #MainContent,
+.template-product #MainContent,
+.template-page #MainContent,
+.template-search #MainContent,
+.template-cart #MainContent {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Featured collection / product grid areas */
+.collection,
+.collection__view-all,
+.product-grid-container,
+.facets-container,
+.page-width,
+.isolate {
+  background-color: transparent !important;
+}
+
+/* Footer/newsletter area */
+.footer,
+.footer.gradient,
+.footer__content-top,
+.footer__content-bottom,
+.newsletter,
+.newsletter__wrapper {
+  background-color: transparent !important;
+}
+
+/*
+ * Keep product cards readable while allowing the pattern around them.
+ * Remove this block if you want the cards themselves transparent too.
+ */
+.card-wrapper .card,
+.product-card-wrapper .card {
+  background: rgba(0, 0, 0, 0.72);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+/* Text over the dark patterned background */
+#MainContent,
+.footer {
+  color: rgb(255, 255, 255);
+}
+
+/* Mobile Safari/Chrome are more reliable without fixed attachment */
+@media screen and (max-width: 749px) {
+  body {
+    background-attachment: scroll !important;
+    background-size: 420px auto !important;
+  }
+}
