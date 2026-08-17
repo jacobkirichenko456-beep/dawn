@@ -1,0 +1,59 @@
+/* ================================================
+   Charge Graphics — Topography Pattern Overlay
+   ================================================
+   HOW TO USE:
+   1. Upload your image to your theme's /assets/ folder
+      (e.g. assets/cg-topography-bg.png)
+   2. Replace REPLACE_WITH_IMAGE_URL below with your
+      image's URL. Options:
+        a) Shopify CDN URL, e.g.:
+           https://cdn.shopify.com/s/files/.../cg-topography-bg.png
+        b) OR, if this file itself lives inside a Shopify
+           theme's assets/ folder, you can instead skip this
+           file and use the {% style %} block version (Liquid)
+           previously provided, which auto-resolves the path.
+   3. Link this file in your theme (e.g. in layout/theme.liquid):
+        <link rel="stylesheet" href="{{ 'cg-pattern-overlay.css' | asset_url }}">
+   ================================================ */
+
+body {
+  background-color: #08080a;
+}
+
+.cg-pattern-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("REPLACE_WITH_IMAGE_URL");
+  background-size: 900px 1800px;  /* bigger = more spread out */
+  background-repeat: repeat;
+  background-position: 0 0;
+  opacity: 0.6;                    /* 0–1, lower = subtler */
+  mix-blend-mode: screen;          /* keeps black areas transparent */
+}
+
+/* Optional: fun bouncy hover on buttons */
+.button,
+a.button,
+button.button {
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.18s ease !important;
+}
+.button:hover,
+a.button:hover,
+button.button:hover {
+  transform: translateY(-3px) scale(1.035);
+}
+
+/* Optional: subtle wiggle on product/collection card hover */
+.card-wrapper:hover .card__media,
+.collection-list .card-wrapper:hover {
+  transform: rotate(-0.6deg) scale(1.015);
+  transition: transform 0.25s ease;
+}
+
+@media screen and (max-width: 749px) {
+  .cg-pattern-overlay {
+    background-size: 600px 1200px;
+  }
+}
