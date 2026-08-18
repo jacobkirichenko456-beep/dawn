@@ -17,9 +17,93 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "collection_list_QDx4HY": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_cJPKEE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "surron-lbx-talaria-eride-pro-decals"
+          }
+        },
+        "featured_collection_Q3bV7G": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cemoto-decals"
+          }
+        },
+        "featured_collection_xFDL9x": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "super-73-graphics"
+          }
+        },
+        "featured_collection_MVDqxp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "strike-shadow-decals"
+          }
+        },
+        "featured_collection_Ccgnhn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hyper-bee-decals"
+          }
+        },
+        "featured_collection_aj7U9V": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rtr-graphics-1"
+          }
+        },
+        "featured_collection_M8RqkH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tuttio-decals"
+          }
+        },
+        "featured_collection_9VrRJc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "heybike-decals"
+          }
+        },
+        "featured_collection_NdBCpt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "stark-varg-graphics-2"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_cJPKEE",
+        "featured_collection_Q3bV7G",
+        "featured_collection_xFDL9x",
+        "featured_collection_MVDqxp",
+        "featured_collection_Ccgnhn",
+        "featured_collection_aj7U9V",
+        "featured_collection_M8RqkH",
+        "featured_collection_9VrRJc",
+        "featured_collection_NdBCpt"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "<strong>Shop By Bike</strong>",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-4",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "cg_pattern_overlay"
+    "cg_pattern_overlay",
+    "collection_list_QDx4HY"
   ]
 }
