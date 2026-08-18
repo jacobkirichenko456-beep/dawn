@@ -88,7 +88,8 @@
         "featured_collection_NdBCpt"
       ],
       "custom_css": [
-        "/* Make Collection List cards a little smaller */.w-dyn-item {transform: scale(0.92); transform-origin: center;}"
+        "@media screen and (max-width: 749px) {.collection-list__item {width: 78% !important; max-width: 78% !important; flex: 0 0 78% !important; }}",
+        "/* White line around collection photos */.collection-list__item img {border: 2px solid white !important; box-sizing: border-box;}"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
