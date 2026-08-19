@@ -89,8 +89,8 @@
       ],
       "custom_css": [
         "@media screen and (max-width: 749px) {.collection-list__item {width: 78% !important; max-width: 78% !important; flex: 0 0 78% !important; }}",
-        "/* White line around collection photos */.collection-list__item img {border: 2px solid white !important; box-sizing: border-box;}",
-        "/* Sport / Racing style */h1,h2,h3,h4,h5,h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}"
+        " /* White line around collection photos */.collection-list__item img {border: 2px solid white !important; box-sizing: border-box;}",
+        " /* Sport / Racing style */h1,h2,h3,h4,h5,h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -109,18 +109,18 @@
     "featured_collection_y4N946": {
       "type": "featured-collection",
       "custom_css": [
-        "/* Sport / Racing style */h1, h2, h3, h4, h5, h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}"
+        "/* Sport / Racing style */h1,h2,h3,h4,h5,h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}"
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "customizeable",
-        "products_to_show": 4,
+        "products_to_show": 3,
         "title": "<strong>Design Your Own Decals</strong>",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 1,
+        "columns_desktop": 5,
         "enable_desktop_slider": true,
         "full_width": false,
         "show_view_all": false,
