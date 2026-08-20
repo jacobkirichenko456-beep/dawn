@@ -33,6 +33,12 @@
             "collection": "cemoto-decals"
           }
         },
+        "featured_collection_8pEPNh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ultra-bee-decals-1"
+          }
+        },
         "featured_collection_xFDL9x": {
           "type": "featured_collection",
           "settings": {
@@ -79,6 +85,7 @@
       "block_order": [
         "featured_collection_cJPKEE",
         "featured_collection_Q3bV7G",
+        "featured_collection_8pEPNh",
         "featured_collection_xFDL9x",
         "featured_collection_MVDqxp",
         "featured_collection_Ccgnhn",
