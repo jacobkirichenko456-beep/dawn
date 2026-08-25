@@ -319,6 +319,28 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    <style>
+      /* Custom: solid black header (no more see-through background) */
+      .header,
+      .header-wrapper,
+      .section-header {
+        background-color: #000000 !important;
+      }
+
+      /* Custom: black outline behind all text so it reads over any background */
+      body, body * {
+        text-shadow:
+          -2px -2px 0 #000,
+           2px -2px 0 #000,
+          -2px  2px 0 #000,
+           2px  2px 0 #000,
+           0px -2px 0 #000,
+           0px  2px 0 #000,
+          -2px  0px 0 #000,
+           2px  0px 0 #000;
+      }
+    </style>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
