@@ -14,7 +14,7 @@
     "cg_marquee_banner": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n  .cg-marquee {\n    background-color: #000000;\n    overflow: hidden;\n    white-space: nowrap;\n    padding: 14px 0;\n    border-bottom: 1px solid #1a1a1a;\n    position: sticky;\n    top: 0;\n    z-index: 30;\n  }\n  .cg-marquee__track {\n    display: inline-flex;\n    align-items: center;\n    animation: cgMarqueeScroll 36.4s linear infinite;\n  }\n  .cg-marquee__item {\n    display: inline-flex;\n    align-items: center;\n    color: #ffffff;\n    font-weight: 700;\n    font-size: 14px;\n    letter-spacing: 1.5px;\n    text-transform: uppercase;\n    padding: 0 60px;\n    flex-shrink: 0;\n  }\n  .cg-marquee__logo {\n    width: 26px;\n    height: 26px;\n    margin: 0 60px;\n    flex-shrink: 0;\n    object-fit: contain;\n    display: inline-block;\n  }\n  @keyframes cgMarqueeScroll {\n    from { transform: translateX(0); }\n    to { transform: translateX(-50%); }\n  }\n  @media screen and (max-width: 749px) {\n    .cg-marquee__item { font-size: 12px; padding: 0 30px; }\n    .cg-marquee__logo { width: 20px; height: 20px; margin: 0 30px; }\n  }\n</style>\n\n<div class=\"cg-marquee\">\n  <div class=\"cg-marquee__track\">\n    {% for i in (1..6) %}\n      <span class=\"cg-marquee__item\">Free Shipping On Orders Over $100</span>\n      <img src=\"https://cdn.shopify.com/s/files/1/0948/0368/9768/files/Screenshot_2025-08-11_201350.png?v=1755374488\" alt=\"Charge Graphics logo\" class=\"cg-marquee__logo\">\n      <span class=\"cg-marquee__item\">Over 10,000 Worldwide Customers</span>\n      <img src=\"https://cdn.shopify.com/s/files/1/0948/0368/9768/files/Screenshot_2025-08-11_201350.png?v=1755374488\" alt=\"Charge Graphics logo\" class=\"cg-marquee__logo\">\n    {% endfor %}\n  </div>\n</div>\n",
+        "custom_liquid": "<style>\n  .cg-marquee {\n    background-color: #000000;\n    overflow: hidden;\n    white-space: nowrap;\n    padding: 14px 0;\n    border-bottom: 1px solid #1a1a1a;\n    position: sticky;\n    top: 0;\n    z-index: 30;\n  }\n  .cg-marquee__track {\n    display: inline-flex;\n    align-items: center;\n    animation: cgMarqueeScroll 36.4s linear infinite;\n  }\n  .cg-marquee__item {\n    display: inline-flex;\n    align-items: center;\n    color: #ffffff;\n    font-weight: 700;\n    font-size: 14px;\n    letter-spacing: 1.5px;\n    text-transform: uppercase;\n    padding: 0 60px;\n    flex-shrink: 0;\n  }\n  .cg-marquee__logo {\n    width: 26px;\n    height: 26px;\n    margin: 0 60px;\n    flex-shrink: 0;\n    object-fit: contain;\n    display: inline-block;\n  }\n  @keyframes cgMarqueeScroll {\n    from { transform: translateX(0); }\n    to { transform: translateX(-50%); }\n  }\n  @media screen and (max-width: 749px) {\n    .cg-marquee__item { font-size: 12px; padding: 0 30px; }\n    .cg-marquee__logo { width: 20px; height: 20px; margin: 0 30px; }\n  }\n</style>\n\n<div class=\"cg-marquee\">\n  <div class=\"cg-marquee__track\">\n    {% for i in (1..6) %}\n      <span class=\"cg-marquee__item\">Free Shipping On Orders Over $100</span>\n      <img src=\"https://cdn.shopify.com/s/files/1/0948/0368/9768/files/Screenshot_2025-08-11_201350.png?v=1755374488\" alt=\"Charge Graphics logo\" class=\"cg-marquee__logo\">\n      <span class=\"cg-marquee__item\">Over 10,000 Worldwide Customers</span>\n      <img src=\"https://cdn.shopify.com/s/files/1/0948/0368/9768/files/Screenshot_2025-08-11_201350.png?v=1755374488\" alt=\"Charge Graphics logo\" class=\"cg-marquee__logo\">\n    {% endfor %}\n  </div>\n</div>",
         "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0
@@ -23,7 +23,7 @@
     "cg_header_polish": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n  .header-wrapper {\n    border-bottom: 1px solid rgba(79,143,209,0.35) !important;\n    box-shadow: 0 2px 24px rgba(79,143,209,0.12);\n  }\n  .header-wrapper,\n  .shopify-section-header-sticky .header-wrapper {\n    position: sticky !important;\n    top: 48px !important;\n    z-index: 25 !important;\n  }\n  .header__heading-logo {\n    filter: drop-shadow(0 0 10px rgba(79,143,209,0.3));\n    transition: filter 0.25s ease, transform 0.2s ease;\n  }\n  .header__heading-logo:hover {\n    filter: drop-shadow(0 0 20px rgba(79,143,209,0.6));\n    transform: scale(1.02);\n  }\n  .header__inline-menu .header__menu-item {\n    text-transform: uppercase;\n    font-weight: 600;\n    font-size: 13px;\n    letter-spacing: 0.9px;\n    position: relative;\n  }\n  .header__inline-menu .header__menu-item .header__active-menu-item {\n    font-weight: 600;\n  }\n  .header__inline-menu .header__menu-item::after {\n    content: '';\n    position: absolute;\n    left: 12px;\n    right: 12px;\n    bottom: 6px;\n    height: 2px;\n    background: #4f8fd1;\n    transform: scaleX(0);\n    transform-origin: left;\n    transition: transform 0.25s ease;\n  }\n  .header__inline-menu .header__menu-item:hover::after {\n    transform: scaleX(1);\n  }\n  .header__icon svg,\n  .header__icon img {\n    transition: transform 0.18s ease;\n  }\n  .header__icon:hover svg,\n  .header__icon:hover img {\n    transform: scale(1.12);\n  }\n  .shopify-section-header-sticky .header-wrapper {\n    backdrop-filter: blur(10px);\n    -webkit-backdrop-filter: blur(10px);\n    background-color: rgba(18,18,18,0.92) !important;\n  }\n  @media screen and (max-width: 749px) {\n    .header-wrapper,\n    .shopify-section-header-sticky .header-wrapper {\n      top: 44px !important;\n    }\n  }\n</style>\n",
+        "custom_liquid": "<style>\n  .header-wrapper {\n    border-bottom: 1px solid rgba(79,143,209,0.35) !important;\n    box-shadow: 0 2px 24px rgba(79,143,209,0.12);\n  }\n  .header-wrapper,\n  .shopify-section-header-sticky .header-wrapper {\n    position: sticky !important;\n    top: 48px !important;\n    z-index: 25 !important;\n  }\n  .header__heading-logo {\n    filter: drop-shadow(0 0 10px rgba(79,143,209,0.3));\n    transition: filter 0.25s ease, transform 0.2s ease;\n  }\n  .header__heading-logo:hover {\n    filter: drop-shadow(0 0 20px rgba(79,143,209,0.6));\n    transform: scale(1.02);\n  }\n  .header__inline-menu .header__menu-item {\n    text-transform: uppercase;\n    font-weight: 600;\n    font-size: 13px;\n    letter-spacing: 0.9px;\n    position: relative;\n  }\n  .header__inline-menu .header__menu-item .header__active-menu-item {\n    font-weight: 600;\n  }\n  .header__inline-menu .header__menu-item::after {\n    content: '';\n    position: absolute;\n    left: 12px;\n    right: 12px;\n    bottom: 6px;\n    height: 2px;\n    background: #4f8fd1;\n    transform: scaleX(0);\n    transform-origin: left;\n    transition: transform 0.25s ease;\n  }\n  .header__inline-menu .header__menu-item:hover::after {\n    transform: scaleX(1);\n  }\n  .header__icon svg,\n  .header__icon img {\n    transition: transform 0.18s ease;\n  }\n  .header__icon:hover svg,\n  .header__icon:hover img {\n    transform: scale(1.12);\n  }\n  .shopify-section-header-sticky .header-wrapper {\n    backdrop-filter: blur(10px);\n    -webkit-backdrop-filter: blur(10px);\n    background-color: rgba(18,18,18,0.92) !important;\n  }\n  @media screen and (max-width: 749px) {\n    .header-wrapper,\n    .shopify-section-header-sticky .header-wrapper {\n      top: 44px !important;\n    }\n  }\n</style>",
         "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0
@@ -50,10 +50,56 @@
     "cg_sticky_cart": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n  .cg-sticky-cart {\n    position: fixed;\n    bottom: 24px;\n    right: 24px;\n    z-index: 999;\n    width: 74px;\n    height: 74px;\n    border-radius: 50%;\n    background-color: #000000;\n    border: 2px solid #ffffff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-decoration: none;\n    box-shadow: 0 4px 16px rgba(0,0,0,0.5);\n    transition: transform 0.18s cubic-bezier(.34,1.56,.64,1), box-shadow 0.18s ease;\n    overflow: hidden;\n  }\n  .cg-sticky-cart:hover {\n    transform: translateY(-3px) scale(1.06);\n    box-shadow: 0 8px 22px rgba(0,0,0,0.6);\n  }\n  .cg-sticky-cart img {\n    width: 40px;\n    height: 40px;\n    object-fit: contain;\n  }\n  .cg-sticky-cart__count {\n    position: absolute;\n    top: -4px;\n    right: -4px;\n    background: #ffffff;\n    color: #000000;\n    font-size: 12px;\n    font-weight: 700;\n    min-width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 0 3px;\n  }\n  @media screen and (max-width: 749px) {\n    .cg-sticky-cart { width: 62px; height: 62px; bottom: 16px; right: 16px; }\n    .cg-sticky-cart img { width: 32px; height: 32px; }\n  }\n</style>\n\n<a href=\"{{ routes.cart_url }}\" class=\"cg-sticky-cart\" aria-label=\"View cart\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0948/0368/9768/files/ChatGPT_Image_Aug_19_2026_04_32_15_PM.png?v=1787178750\" alt=\"Cart\">\n  {% if cart.item_count > 0 %}\n    <span class=\"cg-sticky-cart__count\">{{ cart.item_count }}</span>\n  {% endif %}\n</a>\n",
+        "custom_liquid": "<style>\n  .cg-sticky-cart {\n    position: fixed;\n    bottom: 24px;\n    right: 24px;\n    z-index: 999;\n    width: 74px;\n    height: 74px;\n    border-radius: 50%;\n    background-color: #000000;\n    border: 2px solid #ffffff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-decoration: none;\n    box-shadow: 0 4px 16px rgba(0,0,0,0.5);\n    transition: transform 0.18s cubic-bezier(.34,1.56,.64,1), box-shadow 0.18s ease;\n    overflow: hidden;\n  }\n  .cg-sticky-cart:hover {\n    transform: translateY(-3px) scale(1.06);\n    box-shadow: 0 8px 22px rgba(0,0,0,0.6);\n  }\n  .cg-sticky-cart img {\n    width: 40px;\n    height: 40px;\n    object-fit: contain;\n  }\n  .cg-sticky-cart__count {\n    position: absolute;\n    top: -4px;\n    right: -4px;\n    background: #ffffff;\n    color: #000000;\n    font-size: 12px;\n    font-weight: 700;\n    min-width: 20px;\n    height: 20px;\n    border-radius: 50%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    padding: 0 3px;\n  }\n  @media screen and (max-width: 749px) {\n    .cg-sticky-cart { width: 62px; height: 62px; bottom: 16px; right: 16px; }\n    .cg-sticky-cart img { width: 32px; height: 32px; }\n  }\n</style>\n\n<a href=\"{{ routes.cart_url }}\" class=\"cg-sticky-cart\" aria-label=\"View cart\">\n  <img src=\"https://cdn.shopify.com/s/files/1/0948/0368/9768/files/ChatGPT_Image_Aug_19_2026_04_32_15_PM.png?v=1787178750\" alt=\"Cart\">\n  {% if cart.item_count > 0 %}\n    <span class=\"cg-sticky-cart__count\">{{ cart.item_count }}</span>\n  {% endif %}\n</a>",
         "color_scheme": "scheme-4",
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "178772318581493d25": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_dwpgKz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true,
+            "rating_display": "default"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_dwpgKz"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
@@ -61,6 +107,7 @@
     "cg_marquee_banner",
     "cg_header_polish",
     "header",
-    "cg_sticky_cart"
+    "cg_sticky_cart",
+    "178772318581493d25"
   ]
 }
