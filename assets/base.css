@@ -3634,12 +3634,4 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
-}
-.gradient {
-    background: var(--gradient-background);
-    background-attachment: fixed;
-    background-image: url(https://cdn.shopify.com/s/files/1/0948/0368/9768/files/topography-wallpaper-in-blue-for-iphone-05-11-2024-1730795186-hd-wallpaper.png) !important;
-    background-color: transparent !important;
-    background-position: top left !important;
-    background-size: auto !important;
 } 
