@@ -113,6 +113,82 @@
         "padding_bottom": 20
       }
     },
+    "collection_list_UP43ck": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Cy8h7e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-odi-decal"
+          }
+        },
+        "featured_collection_bkcJEk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "graphics-kits"
+          }
+        },
+        "featured_collection_CN8cRK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vented-plates-1"
+          }
+        },
+        "featured_collection_BjJer3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "super-73-decals"
+          }
+        },
+        "featured_collection_dtqfHW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fork-guard-decals"
+          }
+        },
+        "featured_collection_9erGqH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fork-decals"
+          }
+        },
+        "featured_collection_NHjiHC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "phone-decals"
+          }
+        },
+        "featured_collection_JpGbhz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rear-fender-decals"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Cy8h7e",
+        "featured_collection_bkcJEk",
+        "featured_collection_CN8cRK",
+        "featured_collection_BjJer3",
+        "featured_collection_dtqfHW",
+        "featured_collection_9erGqH",
+        "featured_collection_NHjiHC",
+        "featured_collection_JpGbhz"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_y4N946": {
       "type": "featured-collection",
       "custom_css": [
@@ -170,13 +246,13 @@
             "show_product_name": true,
             "hide_arrows_mobile": true,
             "arrows_position": "sides",
-            "max_width": 1100,
+            "max_width": 700,
             "corner_styling": "soft",
-            "header_text_color": "#FFFFFF",
+            "header_text_color": "#ffffff",
             "text_color": "#000000",
-            "card_color": "#F9F9F9",
-            "stars_color": "#FFE344",
-            "arrows_color": "#FFFFFF",
+            "card_color": "#f9f9f9",
+            "stars_color": "#ffe344",
+            "arrows_color": "#ffffff",
             "transition_speed": 5,
             "header_text": "Customers are saying",
             "show_average_rating": true,
@@ -195,6 +271,7 @@
   "order": [
     "cg_pattern_overlay",
     "collection_list_QDx4HY",
+    "collection_list_UP43ck",
     "featured_collection_y4N946",
     "1787723535f611b77f"
   ]
