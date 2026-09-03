@@ -175,6 +175,9 @@
         "featured_collection_NHjiHC",
         "featured_collection_JpGbhz"
       ],
+      "custom_css": [
+        " /* Sport / Racing style */h1,h2,h3,h4,h5,h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}"
+      ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Collections",
