@@ -176,19 +176,19 @@
         "featured_collection_JpGbhz"
       ],
       "custom_css": [
-        " /* Sport / Racing style */h1,h2,h3,h4,h5,h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}",
-        " /* Shrink collection boxes 25% */.collection-list__item {max-width: 75% !important; margin-left: auto !important; margin-right: auto !important;}"
+        "/* Sport / Racing style */h1,h2,h3,h4,h5,h6,.card__heading,.title {font-family: \"Eurostile Extended\", \"Microgramma\", sans-serif !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.04em; font-style: italic;}",
+        " /* Shrink collection boxes 25% */.collection-list__item {max-width: 15% !important; margin-left: auto !important; margin-right: auto !important;}"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Collections",
+        "title": "Browse By Product",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
