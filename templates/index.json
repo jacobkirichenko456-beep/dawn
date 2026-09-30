@@ -33,6 +33,12 @@
             "collection": "cemoto-decals"
           }
         },
+        "featured_collection_MVDqxp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "strike-shadow-decals"
+          }
+        },
         "featured_collection_PLHAWq": {
           "type": "featured_collection",
           "settings": {
@@ -45,16 +51,16 @@
             "collection": "ultra-bee-decals-1"
           }
         },
+        "featured_collection_RXUETj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "altis-graphics"
+          }
+        },
         "featured_collection_xFDL9x": {
           "type": "featured_collection",
           "settings": {
             "collection": "super-73-graphics"
-          }
-        },
-        "featured_collection_MVDqxp": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "strike-shadow-decals"
           }
         },
         "featured_collection_Ccgnhn": {
@@ -91,10 +97,11 @@
       "block_order": [
         "featured_collection_cJPKEE",
         "featured_collection_Q3bV7G",
+        "featured_collection_MVDqxp",
         "featured_collection_PLHAWq",
         "featured_collection_8pEPNh",
+        "featured_collection_RXUETj",
         "featured_collection_xFDL9x",
-        "featured_collection_MVDqxp",
         "featured_collection_Ccgnhn",
         "featured_collection_aj7U9V",
         "featured_collection_M8RqkH",
