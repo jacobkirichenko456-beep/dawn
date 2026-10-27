@@ -63,6 +63,12 @@
             "collection": "super-73-graphics"
           }
         },
+        "featured_collection_EmcX37": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "qronge-x1-spark"
+          }
+        },
         "featured_collection_Ccgnhn": {
           "type": "featured_collection",
           "settings": {
@@ -102,6 +108,7 @@
         "featured_collection_8pEPNh",
         "featured_collection_RXUETj",
         "featured_collection_xFDL9x",
+        "featured_collection_EmcX37",
         "featured_collection_Ccgnhn",
         "featured_collection_aj7U9V",
         "featured_collection_M8RqkH",
